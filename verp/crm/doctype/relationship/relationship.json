@@ -1,0 +1,56 @@
+{
+ "actions": [],
+ "autoname": "format: Relationship bw {entity_1) & {entity_2}",
+ "creation": "2021-08-30 22:20:47.548766",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "entity_1",
+  "entity_2",
+  "nature_of_relationship"
+ ],
+ "fields": [
+  {
+   "fieldname": "entity_1",
+   "fieldtype": "Link",
+   "label": "Entity 1",
+   "options": "Client"
+  },
+  {
+   "fieldname": "entity_2",
+   "fieldtype": "Link",
+   "label": "Entity 2",
+   "options": "Client"
+  },
+  {
+   "fieldname": "nature_of_relationship",
+   "fieldtype": "Data",
+   "label": "Nature of Relationship"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-08-30 22:20:47.548766",
+ "modified_by": "Administrator",
+ "module": "CRM",
+ "name": "Relationship",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

@@ -1,0 +1,230 @@
+{
+ "actions": [],
+ "autoname": "format: PROJ-{title}-{#####}",
+ "creation": "2021-08-30 22:46:26.131090",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project_name",
+  "start_date",
+  "status",
+  "status_check",
+  "description",
+  "time_in_list",
+  "column_break_4",
+  "client",
+  "due_date",
+  "budget",
+  "deftime",
+  "time_1",
+  "time_2",
+  "time_4",
+  "time_3",
+  "time_5",
+  "html_1",
+  "section_break_8",
+  "payment_1_received",
+  "payment_2_received",
+  "payment_3_received",
+  "column_break_12",
+  "payment_4_received",
+  "payment_5_received",
+  "balance"
+ ],
+ "fields": [
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "client",
+   "fieldtype": "Link",
+   "label": "Client",
+   "options": "Client"
+  },
+  {
+   "fieldname": "due_date",
+   "fieldtype": "Date",
+   "label": "Due Date"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break",
+   "label": "Payments"
+  },
+  {
+   "default": "0",
+   "fieldname": "payment_1_received",
+   "fieldtype": "Check",
+   "label": "Payment 1 Received"
+  },
+  {
+   "default": "0",
+   "fieldname": "payment_2_received",
+   "fieldtype": "Check",
+   "label": "Payment 2 Received"
+  },
+  {
+   "default": "0",
+   "fieldname": "payment_3_received",
+   "fieldtype": "Check",
+   "label": "Payment 3 Received"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "payment_4_received",
+   "fieldtype": "Check",
+   "label": "Payment 4 Received"
+  },
+  {
+   "default": "0",
+   "fieldname": "payment_5_received",
+   "fieldtype": "Check",
+   "label": "Payment 5 Received"
+  },
+  {
+   "fieldname": "balance",
+   "fieldtype": "Currency",
+   "label": "Balance"
+  },
+  {
+   "fieldname": "budget",
+   "fieldtype": "Currency",
+   "label": "Budget"
+  },
+  {
+   "fieldname": "time_in_list",
+   "fieldtype": "HTML"
+  },
+  {
+   "fieldname": "project_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Title",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "time_1",
+   "fieldtype": "Datetime",
+   "hidden": 1,
+   "label": "time 1",
+   "print_hide": 1,
+   "read_only": 1,
+   "report_hide": 1
+  },
+  {
+   "fieldname": "time_2",
+   "fieldtype": "Datetime",
+   "hidden": 1,
+   "label": "time 2",
+   "print_hide": 1,
+   "read_only": 1,
+   "report_hide": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "time_3",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "time 3",
+   "print_hide": 1,
+   "read_only": 1,
+   "report_hide": 1
+  },
+  {
+   "fieldname": "time_4",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "time 4",
+   "print_hide": 1,
+   "read_only": 1,
+   "report_hide": 1
+  },
+  {
+   "fieldname": "html_1",
+   "fieldtype": "HTML",
+   "label": "html 1"
+  },
+  {
+   "fieldname": "status_check",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Status Check",
+   "print_hide": 1,
+   "read_only": 1,
+   "report_hide": 1
+  },
+  {
+   "default": "ToDo",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "ToDo\nIn Progress\nUnder Review\nCompleted"
+  },
+  {
+   "fieldname": "time_5",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Time 5",
+   "print_hide": 1,
+   "read_only": 1,
+   "report_hide": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "deftime",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "deftime",
+   "print_hide": 1,
+   "read_only": 1,
+   "report_hide": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "link_doctype": "Task",
+   "link_fieldname": "project"
+  }
+ ],
+ "modified": "2021-09-03 15:06:51.180179",
+ "modified_by": "Administrator",
+ "module": "CRM",
+ "name": "Project",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

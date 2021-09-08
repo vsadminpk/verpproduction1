@@ -1,0 +1,33 @@
+{
+ "attach_print": 0,
+ "channel": "System Notification",
+ "creation": "2021-09-03 16:28:59.065691",
+ "date_changed": "fortnight_date",
+ "days_in_advance": 8,
+ "docstatus": 0,
+ "doctype": "Notification",
+ "document_type": "Client",
+ "enabled": 1,
+ "event": "Days After",
+ "idx": 0,
+ "is_standard": 1,
+ "message": "",
+ "modified": "2021-09-03 16:30:12.317164",
+ "modified_by": "Administrator",
+ "module": "CRM",
+ "name": "Client Payroll Not Completed",
+ "owner": "Administrator",
+ "property_value": "Incomplete",
+ "recipients": [
+  {
+   "receiver_by_role": "System Manager"
+  },
+  {
+   "receiver_by_role": "Administrator"
+  }
+ ],
+ "send_system_notification": 0,
+ "send_to_all_assignees": 1,
+ "set_property_after_alert": "stat2",
+ "subject": "{{ doc.name1 }}'s Payroll is incomplete"
+}

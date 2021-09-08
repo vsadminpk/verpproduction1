@@ -1,0 +1,473 @@
+{
+ "actions": [],
+ "autoname": "format: {name1} - {client_type}",
+ "creation": "2021-08-30 21:54:03.063144",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "details_section",
+  "name1",
+  "client_type",
+  "company_name",
+  "column_break_5",
+  "hourly_rate",
+  "client_group",
+  "services_offered_section",
+  "bookkeeping",
+  "payroll",
+  "stp_review",
+  "superannuation_lodgement",
+  "bas",
+  "column_break_12",
+  "ias",
+  "annual_tax_return",
+  "business_advisory",
+  "tax_planning",
+  "accounts_receivable",
+  "services_status_section",
+  "html_21",
+  "button1",
+  "html_22",
+  "button2",
+  "html_23",
+  "button3",
+  "html_24",
+  "button4",
+  "column_break_25",
+  "stat1",
+  "stat2",
+  "stat3",
+  "stat4",
+  "column_break_30",
+  "month",
+  "fortnight_date",
+  "quarter",
+  "quarter_1",
+  "column_break_35",
+  "more_information_section",
+  "abn",
+  "acn",
+  "primary_contact_number",
+  "primary_contact_email",
+  "client_level",
+  "address",
+  "column_break_37",
+  "tax_file_number",
+  "asic_corporate_key",
+  "relationship",
+  "nature_of_relationship",
+  "contacts",
+  "referred_by",
+  "email_group",
+  "section_break_34",
+  "notes",
+  "attachments",
+  "bookkeeping_status",
+  "payroll_status",
+  "super_lodgement_status",
+  "bas_status"
+ ],
+ "fields": [
+  {
+   "fieldname": "details_section",
+   "fieldtype": "Section Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "client_type",
+   "fieldtype": "Select",
+   "label": "Client Type",
+   "options": "Individual\nCompany\nNon-Profit"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "hourly_rate",
+   "fieldtype": "Currency",
+   "label": "Hourly Rate"
+  },
+  {
+   "fieldname": "client_group",
+   "fieldtype": "Link",
+   "label": "Client Group",
+   "options": "Client Group"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "services_offered_section",
+   "fieldtype": "Section Break",
+   "label": "Services Offered"
+  },
+  {
+   "default": "0",
+   "fieldname": "bookkeeping",
+   "fieldtype": "Check",
+   "label": "Bookkeeping"
+  },
+  {
+   "default": "0",
+   "fieldname": "payroll",
+   "fieldtype": "Check",
+   "label": "Payroll"
+  },
+  {
+   "default": "0",
+   "fieldname": "stp_review",
+   "fieldtype": "Check",
+   "label": "STP Review"
+  },
+  {
+   "default": "0",
+   "fieldname": "superannuation_lodgement",
+   "fieldtype": "Check",
+   "label": "Superannuation lodgement"
+  },
+  {
+   "default": "0",
+   "fieldname": "bas",
+   "fieldtype": "Check",
+   "label": "BAS"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "ias",
+   "fieldtype": "Check",
+   "label": "IAS"
+  },
+  {
+   "default": "0",
+   "fieldname": "annual_tax_return",
+   "fieldtype": "Check",
+   "label": "Annual Tax Return"
+  },
+  {
+   "default": "0",
+   "fieldname": "business_advisory",
+   "fieldtype": "Check",
+   "label": "Business Advisory"
+  },
+  {
+   "default": "0",
+   "fieldname": "tax_planning",
+   "fieldtype": "Check",
+   "label": "Tax Planning"
+  },
+  {
+   "default": "0",
+   "fieldname": "accounts_receivable",
+   "fieldtype": "Check",
+   "label": "Accounts Receivable"
+  },
+  {
+   "depends_on": "eval:doc.client_type == 'Company'",
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "label": "Company Name"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "more_information_section",
+   "fieldtype": "Section Break",
+   "label": "More Information"
+  },
+  {
+   "fieldname": "primary_contact_number",
+   "fieldtype": "Data",
+   "label": "Primary Contact Number"
+  },
+  {
+   "fieldname": "primary_contact_email",
+   "fieldtype": "Data",
+   "label": "Primary Contact Email",
+   "mandatory_depends_on": "email_group"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "column_break_25",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fetch_from": "relationship.nature_of_relationship",
+   "fieldname": "nature_of_relationship",
+   "fieldtype": "Data",
+   "label": "Nature of Relationship"
+  },
+  {
+   "fieldname": "client_level",
+   "fieldtype": "Select",
+   "label": "Client Level",
+   "options": "Silver\nGold\nPlatinum\nDiamond"
+  },
+  {
+   "fieldname": "referred_by",
+   "fieldtype": "Data",
+   "label": "Referred By"
+  },
+  {
+   "fieldname": "abn",
+   "fieldtype": "Data",
+   "label": "ABN",
+   "length": 11
+  },
+  {
+   "fieldname": "acn",
+   "fieldtype": "Data",
+   "label": "ACN",
+   "length": 9
+  },
+  {
+   "fieldname": "tax_file_number",
+   "fieldtype": "Data",
+   "label": "Tax File Number",
+   "length": 9
+  },
+  {
+   "fieldname": "asic_corporate_key",
+   "fieldtype": "Data",
+   "label": "ASIC Corporate Key",
+   "length": 8
+  },
+  {
+   "fieldname": "contacts",
+   "fieldtype": "Table MultiSelect",
+   "label": "Contacts",
+   "options": "Contacts Table"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_34",
+   "fieldtype": "Section Break",
+   "label": "Notes & Attachments"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Table",
+   "label": "Notes",
+   "options": "Notes Table"
+  },
+  {
+   "fieldname": "attachments",
+   "fieldtype": "Table",
+   "label": "Attachments",
+   "options": "Attachments Table"
+  },
+  {
+   "fieldname": "relationship",
+   "fieldtype": "Link",
+   "label": "Relationship",
+   "options": "Relationship"
+  },
+  {
+   "fieldname": "email_group",
+   "fieldtype": "Link",
+   "label": "Email Group (Email Marketing)",
+   "options": "Email Group"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "services_status_section",
+   "fieldtype": "Section Break",
+   "label": "Services Status"
+  },
+  {
+   "fieldname": "html_21",
+   "fieldtype": "HTML",
+   "options": "<p>Bookkeeping<br></p>"
+  },
+  {
+   "fieldname": "html_22",
+   "fieldtype": "HTML",
+   "options": "<p>Payroll<br></p>"
+  },
+  {
+   "fieldname": "html_23",
+   "fieldtype": "HTML",
+   "options": "<p>Super Lodgement<br></p>"
+  },
+  {
+   "fieldname": "html_24",
+   "fieldtype": "HTML",
+   "options": "<p>BAS Lodgement<br></p>"
+  },
+  {
+   "default": "Incomplete",
+   "fieldname": "stat1",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Incomplete\nCompleted"
+  },
+  {
+   "default": "Incomplete",
+   "fieldname": "stat2",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Incomplete\nCompleted"
+  },
+  {
+   "default": "Incomplete",
+   "fieldname": "stat3",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Incomplete\nCompleted"
+  },
+  {
+   "default": "Incomplete",
+   "fieldname": "stat4",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Incomplete\nCompleted"
+  },
+  {
+   "fieldname": "column_break_37",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_30",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "month",
+   "fieldtype": "Select",
+   "label": "Month",
+   "options": "January\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember"
+  },
+  {
+   "fieldname": "fortnight_date",
+   "fieldtype": "Date",
+   "label": "Fortnight Date"
+  },
+  {
+   "fieldname": "quarter",
+   "fieldtype": "Select",
+   "label": "Quarter",
+   "options": "First\nSecond\nThird\nFourth"
+  },
+  {
+   "fieldname": "quarter_1",
+   "fieldtype": "Select",
+   "label": "Quarter",
+   "options": "First\nSecond\nThird\nFourth"
+  },
+  {
+   "fieldname": "column_break_35",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "bookkeeping_status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Bookkeeping Status",
+   "options": "Complete\nIncomplete",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "payroll_status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Payroll Status",
+   "options": "Complete\nIncomplete",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "super_lodgement_status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "Super Lodgement Status",
+   "options": "Complete\nIncomplete",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "bas_status",
+   "fieldtype": "Select",
+   "hidden": 1,
+   "label": "BAS Status",
+   "options": "Complete\nIncomplete",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "button2",
+   "fieldtype": "Button",
+   "label": "Set Status"
+  },
+  {
+   "fieldname": "button1",
+   "fieldtype": "Button",
+   "label": "Set Status"
+  },
+  {
+   "fieldname": "button3",
+   "fieldtype": "Button",
+   "label": "Set Status"
+  },
+  {
+   "fieldname": "button4",
+   "fieldtype": "Button",
+   "label": "Set Status"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [
+  {
+   "group": "Projects",
+   "link_doctype": "Project",
+   "link_fieldname": "client"
+  },
+  {
+   "group": "Documents",
+   "link_doctype": "Engagement Letter",
+   "link_fieldname": "client"
+  },
+  {
+   "group": "Documents",
+   "link_doctype": "NDIS Consulting Agreement",
+   "link_fieldname": "client"
+  },
+  {
+   "group": "Documents",
+   "link_doctype": "Software Licence Agreement",
+   "link_fieldname": "client"
+  }
+ ],
+ "modified": "2021-09-03 21:36:40.792404",
+ "modified_by": "Administrator",
+ "module": "CRM",
+ "name": "Client",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_seen": 1
+}

@@ -1,0 +1,191 @@
+{
+ "actions": [],
+ "autoname": "format:{title}-{#####}",
+ "creation": "2021-08-30 22:52:42.731376",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "start_date",
+  "title",
+  "description",
+  "column_break_4",
+  "status",
+  "end_date",
+  "budget",
+  "color",
+  "html_1",
+  "section_break_8",
+  "checklist",
+  "percompleted",
+  "time_1",
+  "time_2",
+  "time_3",
+  "time_4",
+  "time_5",
+  "deftime",
+  "status_check"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "fieldtype": "Link",
+   "label": "Project",
+   "options": "Project"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "ToDo\nIn Progress\nUnder Review\nCompleted"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "fieldname": "budget",
+   "fieldtype": "Currency",
+   "label": "Budget"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_8",
+   "fieldtype": "Section Break",
+   "label": "Checklist"
+  },
+  {
+   "fieldname": "checklist",
+   "fieldtype": "Table",
+   "label": "Checklist",
+   "options": "Task Checklist"
+  },
+  {
+   "fieldname": "percompleted",
+   "fieldtype": "Float",
+   "label": "% Completed",
+   "length": 4,
+   "precision": "2",
+   "read_only": 1
+  },
+  {
+   "fieldname": "color",
+   "fieldtype": "Color",
+   "label": "Color"
+  },
+  {
+   "fieldname": "title",
+   "fieldtype": "Data",
+   "label": "Title"
+  },
+  {
+   "fieldname": "html_1",
+   "fieldtype": "HTML",
+   "label": "html 1"
+  },
+  {
+   "fieldname": "time_1",
+   "fieldtype": "Datetime",
+   "hidden": 1,
+   "label": "time 1",
+   "print_hide": 1,
+   "read_only": 1,
+   "report_hide": 1
+  },
+  {
+   "fieldname": "time_2",
+   "fieldtype": "Datetime",
+   "hidden": 1,
+   "label": "time 2",
+   "print_hide": 1,
+   "read_only": 1,
+   "report_hide": 1
+  },
+  {
+   "fieldname": "time_3",
+   "fieldtype": "Float",
+   "hidden": 1,
+   "label": "time 3",
+   "print_hide": 1,
+   "read_only": 1,
+   "report_hide": 1
+  },
+  {
+   "fieldname": "time_4",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "time 4",
+   "print_hide": 1,
+   "read_only": 1,
+   "report_hide": 1
+  },
+  {
+   "fieldname": "time_5",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "time 5",
+   "print_hide": 1,
+   "read_only": 1,
+   "report_hide": 1
+  },
+  {
+   "default": "1",
+   "fieldname": "deftime",
+   "fieldtype": "Check",
+   "hidden": 1,
+   "label": "deftime",
+   "print_hide": 1,
+   "read_only": 1,
+   "report_hide": 1
+  },
+  {
+   "fieldname": "status_check",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "status check",
+   "print_hide": 1,
+   "read_only": 1,
+   "report_hide": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-09-03 15:14:24.357584",
+ "modified_by": "Administrator",
+ "module": "CRM",
+ "name": "Task",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}

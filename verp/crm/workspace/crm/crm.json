@@ -1,0 +1,150 @@
+{
+ "cards_label": "Lists",
+ "category": "Modules",
+ "charts": [],
+ "creation": "2021-09-03 21:15:06.353539",
+ "developer_mode_only": 0,
+ "disable_user_customization": 0,
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "extends_another_page": 0,
+ "hide_custom": 0,
+ "icon": "crm",
+ "idx": 0,
+ "is_default": 0,
+ "is_standard": 1,
+ "label": "CRM",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Clients",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Client List",
+   "link_to": "Client",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Lead List",
+   "link_to": "Lead",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Client Groups",
+   "link_to": "Client Group",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Contacts List",
+   "link_to": "Contact",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Documents",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Engagement Letter List",
+   "link_to": "Engagement Letter",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "NDIS Consulting Agreement List",
+   "link_to": "NDIS Consulting Agreement",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Software Licence Agreement",
+   "link_to": "Software Licence Agreement",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2021-09-03 21:23:23.393679",
+ "modified_by": "Administrator",
+ "module": "CRM",
+ "name": "CRM",
+ "owner": "Administrator",
+ "pin_to_bottom": 0,
+ "pin_to_top": 1,
+ "shortcuts": [
+  {
+   "doc_view": "New",
+   "label": "Add Client",
+   "link_to": "Client",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "New",
+   "label": "Add Lead",
+   "link_to": "Lead",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "New",
+   "label": "Add Engagement Letter",
+   "link_to": "Engagement Letter",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "New",
+   "label": "Add NDIS Consulting Agreement",
+   "link_to": "NDIS Consulting Agreement",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "New",
+   "label": "Add Software Licence Agreement",
+   "link_to": "Software Licence Agreement",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "New",
+   "label": "Add Contact",
+   "link_to": "Contact",
+   "type": "DocType"
+  },
+  {
+   "doc_view": "List",
+   "label": "Client Group List",
+   "link_to": "Client Group",
+   "type": "DocType"
+  }
+ ],
+ "shortcuts_label": "Add Forms"
+}

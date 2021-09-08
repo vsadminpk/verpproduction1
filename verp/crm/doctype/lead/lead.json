@@ -1,0 +1,266 @@
+{
+ "actions": [],
+ "autoname": "format: {name1} - {client_type}",
+ "creation": "2021-09-03 20:30:00.618009",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "details_section",
+  "name1",
+  "client_type",
+  "company_name",
+  "column_break_5",
+  "status",
+  "follow_up_date",
+  "services_offered_section",
+  "bookkeeping",
+  "payroll",
+  "stp_review",
+  "superannuation_lodgement",
+  "bas",
+  "column_break_12",
+  "ias",
+  "annual_tax_return",
+  "business_advisory",
+  "tax_planning",
+  "accounts_receivable",
+  "more_information_section",
+  "abn",
+  "acn",
+  "primary_contact_number",
+  "primary_contact_email",
+  "address",
+  "column_break_37",
+  "tax_file_number",
+  "lead_source",
+  "relationship",
+  "nature_of_relationship",
+  "referred_by",
+  "email_group",
+  "section_break_34",
+  "notes",
+  "attachments"
+ ],
+ "fields": [
+  {
+   "fieldname": "details_section",
+   "fieldtype": "Section Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "name1",
+   "fieldtype": "Data",
+   "label": "Name"
+  },
+  {
+   "fieldname": "client_type",
+   "fieldtype": "Select",
+   "label": "Lead Type",
+   "options": "Individual\nCompany\nNon-Profit"
+  },
+  {
+   "depends_on": "eval:doc.client_type == 'Company'",
+   "fieldname": "company_name",
+   "fieldtype": "Data",
+   "label": "Company Name"
+  },
+  {
+   "fieldname": "column_break_5",
+   "fieldtype": "Column Break"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "services_offered_section",
+   "fieldtype": "Section Break",
+   "label": "Services Offered"
+  },
+  {
+   "default": "0",
+   "fieldname": "bookkeeping",
+   "fieldtype": "Check",
+   "label": "Bookkeeping"
+  },
+  {
+   "default": "0",
+   "fieldname": "payroll",
+   "fieldtype": "Check",
+   "label": "Payroll"
+  },
+  {
+   "default": "0",
+   "fieldname": "stp_review",
+   "fieldtype": "Check",
+   "label": "STP Review"
+  },
+  {
+   "default": "0",
+   "fieldname": "superannuation_lodgement",
+   "fieldtype": "Check",
+   "label": "Superannuation lodgement"
+  },
+  {
+   "default": "0",
+   "fieldname": "bas",
+   "fieldtype": "Check",
+   "label": "BAS"
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "ias",
+   "fieldtype": "Check",
+   "label": "IAS"
+  },
+  {
+   "default": "0",
+   "fieldname": "annual_tax_return",
+   "fieldtype": "Check",
+   "label": "Annual Tax Return"
+  },
+  {
+   "default": "0",
+   "fieldname": "business_advisory",
+   "fieldtype": "Check",
+   "label": "Business Advisory"
+  },
+  {
+   "default": "0",
+   "fieldname": "tax_planning",
+   "fieldtype": "Check",
+   "label": "Tax Planning"
+  },
+  {
+   "default": "0",
+   "fieldname": "accounts_receivable",
+   "fieldtype": "Check",
+   "label": "Accounts Receivable"
+  },
+  {
+   "fieldname": "more_information_section",
+   "fieldtype": "Section Break",
+   "label": "More Information"
+  },
+  {
+   "fieldname": "abn",
+   "fieldtype": "Int",
+   "label": "ABN"
+  },
+  {
+   "fieldname": "acn",
+   "fieldtype": "Int",
+   "label": "ACN"
+  },
+  {
+   "fieldname": "primary_contact_number",
+   "fieldtype": "Data",
+   "label": "Primary Contact Number"
+  },
+  {
+   "fieldname": "primary_contact_email",
+   "fieldtype": "Data",
+   "label": "Primary Contact Email",
+   "mandatory_depends_on": "email_group"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Address"
+  },
+  {
+   "fieldname": "column_break_37",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tax_file_number",
+   "fieldtype": "Int",
+   "label": "Tax File Number"
+  },
+  {
+   "fieldname": "lead_source",
+   "fieldtype": "Data",
+   "label": "Lead Source"
+  },
+  {
+   "fieldname": "relationship",
+   "fieldtype": "Link",
+   "label": "Relationship",
+   "options": "Relationship"
+  },
+  {
+   "fetch_from": "relationship.nature_of_relationship",
+   "fieldname": "nature_of_relationship",
+   "fieldtype": "Data",
+   "label": "Nature of Relationship"
+  },
+  {
+   "fieldname": "referred_by",
+   "fieldtype": "Data",
+   "label": "Referred By"
+  },
+  {
+   "fieldname": "email_group",
+   "fieldtype": "Link",
+   "label": "Email Group (Email Marketing)",
+   "options": "Email Group"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "section_break_34",
+   "fieldtype": "Section Break",
+   "label": "Notes & Attachments"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Table",
+   "label": "Notes",
+   "options": "Notes Table"
+  },
+  {
+   "fieldname": "attachments",
+   "fieldtype": "Table",
+   "label": "Attachments",
+   "options": "Attachments Table"
+  },
+  {
+   "default": "Lead",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Lead\nOpportunity\nOpen\nReplied\nQuotation\nLost\nConverted"
+  },
+  {
+   "fieldname": "follow_up_date",
+   "fieldtype": "Date",
+   "label": "Follow Up Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2021-09-03 20:48:05.534649",
+ "modified_by": "Administrator",
+ "module": "CRM",
+ "name": "Lead",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1,
+ "track_seen": 1
+}
